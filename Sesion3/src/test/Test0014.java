@@ -8,8 +8,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class Test0014 {
+import clase.Cuenta;
 
+class Test0014 {
+	Cuenta cuenta_12 = new Cuenta(50);
+	Cuenta cuenta_67 = new Cuenta(0);
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
@@ -39,8 +42,8 @@ class Test0014 {
 		
 		//assertEquals(-250, cuenta_12.getSaldo());
 		//assertEquals(-450, cuenta_67.getSaldo());
-		System.out.println("Cuenta 12345 ", cuenta_12.getSaldo());
-		System.out.println("Cuenta 67890 ", cuenta_67.getSaldo());
+		System.out.println("Cuenta 12345 "+ cuenta_12.getSaldo());
+		System.out.println("Cuenta 67890 "+ cuenta_67.getSaldo());
 	}
 
 }

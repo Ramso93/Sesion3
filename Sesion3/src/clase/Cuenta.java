@@ -22,5 +22,15 @@ public class Cuenta {
 		// TODO Auto-generated method stub
 		this.saldo -= d;
 	}
+
+	public void reintegro(double i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void ingreso(double i) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
