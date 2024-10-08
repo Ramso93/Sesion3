@@ -1,20 +1,26 @@
 package clase;
 
 public class Cuenta {
-	static Double saldo;
+	static double saldo;
 	
-	public Cuenta(Double saldo) {
+	public Cuenta(double saldo) {
 		this.saldo = saldo;
 	}
 	
-	public static int getSaldo() {
-		return 500;
+	public static double getSaldo() {
+		return saldo;
 	}
 	
-	public static void setSaldo(Double saldo) {
-		Cuenta.saldo = saldo;
+	public static void setSaldo(double s) {
+		saldo = s;
 	}
-	public static void ingresar(Double i) {
+	public static void ingresar(double i) {
 		saldo += i;
 	}
+
+	public void retirar(double d) {
+		// TODO Auto-generated method stub
+		this.saldo -= d;
+	}
+	
 }
