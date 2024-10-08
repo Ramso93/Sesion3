@@ -14,7 +14,7 @@ class CuentaTest {
 	static Cuenta cuenta;
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		cuenta = new Cuenta();
+		cuenta = new Cuenta(500.00);
 	}
 
 	@AfterAll
@@ -31,7 +31,7 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		cuenta.ingresar(500);
+		cuenta.ingresar(500.00);
 		assertEquals(500, cuenta.getSaldo());
 	}
 
